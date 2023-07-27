@@ -1,38 +1,113 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cubo Flix
 
-## Getting Started
+![Cubo Flix Logo](./public/assets/logo.svg)
 
-First, run the development server:
+Cubo Flix é um projeto de aplicativo web de streaming de filmes desenvolvido com Next.js, React e Framer Motion. Ele oferece aos usuários a possibilidade de visualizar uma lista de filmes populares, pesquisar por filmes específicos, assistir a um destaque do dia e obter mais detalhes sobre cada filme selecionado. O projeto é uma demonstração de como criar um aplicativo de streaming de filmes usando tecnologias modernas de desenvolvimento web.
+
+## Instruções de Instalação
+
+Para executar o projeto localmente em sua máquina, siga as instruções abaixo:
+
+1. Certifique-se de ter o Node.js instalado em sua máquina. Caso precise instalá-lo, você pode fazer o download do Node.js em [https://nodejs.org/](https://nodejs.org/) e seguir as instruções de instalação adequadas para o seu sistema operacional.
+
+2. Clone o repositório do Cubo Flix para sua máquina local usando o seguinte comando Git:
+
+```bash
+git clone https://github.com/Eduardo377/cubo-flix.git
+```
+
+3. Navegue até o diretório do projeto:
+
+```bash
+cd cubo-flix
+```
+
+4. Instale as dependências do projeto executando o seguinte comando:
+
+```bash
+npm install
+```
+
+5. Após a conclusão da instalação das dependências, execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. O servidor de desenvolvimento será iniciado e estará disponível em [http://localhost:3000](http://localhost:3000). Abra este link em seu navegador para visualizar o projeto Cubo Flix.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Funcionalidades Principais
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Tema Claro/Escuro
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+O Cubo Flix oferece suporte a dois temas: claro e escuro. O tema padrão é o claro, mas os usuários podem alternar para o tema escuro clicando no botão de alternância de temas no cabeçalho.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Pesquisa de Filmes
 
-## Learn More
+Os usuários podem pesquisar por filmes específicos utilizando a barra de pesquisa na página inicial. Ao digitar o nome do filme desejado e pressionar a tecla "Enter", a lista de filmes será filtrada de acordo com o termo de pesquisa.
 
-To learn more about Next.js, take a look at the following resources:
+### Lista de Filmes Populares
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A página inicial exibe uma lista de filmes populares. Os filmes são organizados em uma lista horizontal com setas de navegação para rolar entre as páginas de filmes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Destaque do Dia
 
-## Deploy on Vercel
+A seção "Destaque do Dia" na página inicial exibe um filme em destaque selecionado aleatoriamente. Os usuários podem clicar no botão de reprodução para assistir ao trailer do filme no YouTube.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Detalhes do Filme
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Ao clicar em um filme da lista de filmes populares ou do destaque do dia, uma janela modal é aberta com mais detalhes sobre o filme selecionado. O modal mostra o título, classificação, gêneros, data de lançamento e uma sinopse do filme.
+
+## Estrutura do Projeto
+
+A estrutura de pastas e arquivos do projeto Cubo Flix é organizada da seguinte forma:
+
+```
+cubo-flix/
+  ├── .next/
+  ├── node_modules/
+  ├── public/
+  │    ├── assets/
+  │    │    ├── logo.svg
+  │    │    ├── light-mode.svg
+  │    │    ├── dark-mode.svg
+  │    │    ├── seta-esquerda-preta.svg
+  │    │    ├── seta-direita-preta.svg
+  │    │    ├── seta-esquerda-branca.svg
+  │    │    ├── seta-direita-branca.svg
+  │    │    ├── estrela.svg
+  │    │    ├── close.svg
+  │    │    ├── play.svg
+  ├── components/
+  │    ├── Modal.js
+  ├── pages/
+  │    ├── index.js
+  │    └── _app.js
+  ├── styles/
+  │    └── globals.css
+  ├── package.json
+  └── README.md
+```
+
+## Tecnologias Utilizadas
+
+- Next.js: Framework de React para renderização do lado do servidor (SSR) e construção de aplicativos web modernos.
+- React: Biblioteca JavaScript para construção de interfaces de usuário interativas e reativas.
+- Framer Motion: Biblioteca para animações e transições suaves em elementos React.
+- CSS: Estilos globais e estilização dos componentes usando CSS.
+
+## Contribuição
+
+Se você deseja contribuir com o projeto Cubo Flix, fique à vontade para enviar um pull request. Sua contribuição é bem-vinda!
+
+## Licença
+
+O projeto Cubo Flix é licenciado sob a licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para obter mais detalhes.
+
+## Contato
+
+Se você
+
+ tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para enviar um e-mail para [eduardogomes377@gmail.com](mailto:eduardogomes377@gmail.com) ou visite o meu perfil no GitHub em [https://github.com/Eduardo377](https://github.com/Eduardo377).
+
+---
