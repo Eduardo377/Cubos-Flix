@@ -21,7 +21,6 @@ const IndexPage = () => {
   useEffect(() => {
     loadMovies();
     loadHighlightMovie();
-    loadSearchMovies();
   }, []);
 
   const handleKeyDown = (event) => {

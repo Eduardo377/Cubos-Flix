@@ -12,7 +12,12 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src="./assets/discord.svg" alt="Discord" width={30} height={30} />
+            <Image
+              src="./assets/discord.svg"
+              alt="Discord"
+              width={30}
+              height={30}
+            />
           </a>
           <a
             href="https://api.whatsapp.com/send?phone=5521982646297"
@@ -50,7 +55,12 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="./assets/linkedin.svg" alt="linkedin" width={30} height={30} />
+              <Image
+                src="./assets/linkedin.svg"
+                alt="linkedin"
+                width={30}
+                height={30}
+              />
             </a>
             <a
               href="https://github.com/Eduardo377"
@@ -58,7 +68,12 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="./assets/github.svg" alt="GitHub" width={30} height={30} />
+              <Image
+                src="./assets/github.svg"
+                alt="GitHub"
+                width={30}
+                height={30}
+              />
             </a>
             <a
               href="https://gitlab.com/eduardo377"
@@ -66,7 +81,12 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="./assets/gitlab.svg" alt="GitLab" width={30} height={30} />
+              <Image
+                src="./assets/gitlab.svg"
+                alt="GitLab"
+                width={30}
+                height={30}
+              />
             </a>
           </div>
           <div>
@@ -76,7 +96,12 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="./assets/codepen.svg" alt="CodePen" width={30} height={30} />
+              <Image
+                src="./assets/codepen.svg"
+                alt="CodePen"
+                width={30}
+                height={30}
+              />
             </a>
             <a
               href="https://pt.stackoverflow.com/users/259231/eduardo377"
@@ -84,7 +109,12 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="./assets/stackoverflow.svg" alt="Stack Over Flow" width={30} height={30} />
+              <Image
+                src="./assets/stackoverflow.svg"
+                alt="Stack Over Flow"
+                width={30}
+                height={30}
+              />
             </a>
             <a
               href="https://www.codewars.com/users/eduardo377"
@@ -92,7 +122,12 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="./assets/codewars.svg" alt="Code Wars" width={30} height={30} />
+              <Image
+                src="./assets/codewars.svg"
+                alt="Code Wars"
+                width={30}
+                height={30}
+              />
             </a>
           </div>
         </div>
