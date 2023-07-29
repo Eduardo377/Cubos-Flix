@@ -80,32 +80,57 @@ Acesse a aplicação no seu navegador através do endereço: [http://localhost:3
 ```
 cubos-flix/
   ├── public/
-  │   ├── assets/
-  │   │   └── demo.png
-  │   └── index.html
+  │   │
+  │   └── assets/
+  │       ├── close.svg
+  │       ├── codepen.svg
+  │       ├── dcodewars.svg
+  │       ├── dark-mode.svg
+  │       ├── discord.svg
+  │       ├── email.svg
+  │       ├── estrela.svg
+  │       ├── favicon.ico
+  │       ├── github.svg
+  │       ├── gitlab.svg
+  │       ├── light-mode.svg
+  │       ├── linkedin.svg
+  │       ├── logo.svg
+  │       ├── play.svg
+  │       ├── seta-direita-branca.svg
+  │       ├── seta-direita-preta.svg
+  │       ├── seta-esquerda-branca.svg
+  │       ├── seta-esquerda-preta.svg
+  │       ├── stackoverflow.svg
+  │       └── whatsapp.svg
   ├── src/
-  │   ├── components/
-  │   │   ├── Card.jsx
+      ├── components/
+  │   │   ├── Footer.jsx
+  │   │   ├── Header.jsx
+  │   │   ├── HighlightMovie.jsx
   │   │   ├── Modal.jsx
-  │   │   └── ...
+  │   │   ├── MovieItem.jsx
+  │   │   ├── MovieList.jsx
+  │   │   ├── SearchBar.jsx
+  │   │   └── ToggleTheme.svg
   │   ├── pages/
-  │   │   ├── Home.jsx
-  │   │   ├── MovieDetails.jsx
-  │   │   └── ...
-  │   ├── services/
-  │   │   └── api.js
+  │   │   ├── _app.jsx
+  │   │   └── index.jsx
   │   ├── styles/
-  │   │   ├── global.css
-  │   │   └── ...
-  │   ├── App.jsx
-  │   ├── index.jsx
-  │   └── ...
+  │   │   ├── global.scss
+  │   │   └── variables.scss
+  ├── .eslintrc.json
   ├── .gitignore
+  ├── LICENSA.txt
+  ├── netlify.toml
+  ├── next-env.d.ts
+  ├── next.config.js
+  ├── package-lock.json
   ├── package.json
+  ├── postcss.config.js
   ├── README.md
-  └── ...
+  ├── tailwind.config.js
+  └── tsconfig.json
 ```
-
 ## 👨‍💻 Desenvolvedor
 
 ⚙️ **Eduardo Gomes** - [GitHub](https://github.com/Eduardo377) | [Linkedin](https://www.linkedin.com/in/eduardogomes377/)
