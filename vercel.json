@@ -1,14 +1,15 @@
 {
-    "installCommand": "yarn install",
-    "buildCommand": "next build",
-    "devCommand": "next dev",
-    "version": 2,
-    "builds": [{
-        "src": "src/app/",
-        "use": "@vercel/next"
-    }],
-    "routes": [{
-        "src": "(.*)",
-        "dest": "src/app"
-    }]
+  "version": 2,
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }

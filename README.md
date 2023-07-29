@@ -108,6 +108,6 @@ O projeto Cubo Flix é licenciado sob a licença MIT. Consulte o arquivo [LICENS
 
 Se você
 
- tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para enviar um e-mail para [eduardogomes377@gmail.com](mailto:eduardogomes377@gmail.com) ou visite o meu perfil no GitHub em [https://github.com/Eduardo377](https://github.com/Eduardo377).
+tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para enviar um e-mail para [eduardogomes377@gmail.com](mailto:eduardogomes377@gmail.com) ou visite o meu perfil no GitHub em [https://github.com/Eduardo377](https://github.com/Eduardo377).
 
 ---

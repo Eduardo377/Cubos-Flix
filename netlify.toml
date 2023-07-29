@@ -1,5 +1,7 @@
 [build]
-  command = "yarn build"
-  publish = "out"
-  [build.environment]
-NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_ENV = "production"
+
