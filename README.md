@@ -1,113 +1,99 @@
-# Cubo Flix
+# Cubos Flix ![Cubo Flix Logo](./public/assets/logo.svg)
 
-![Cubo Flix Logo](./public/assets/logo.svg)
+Cubos Flix é uma aplicação web para visualização de filmes e séries, onde os usuários podem encontrar informações sobre diversos títulos, buscar por filmes específicos e conhecer o destaque do dia.
 
-Cubo Flix é um projeto de aplicativo web de streaming de filmes desenvolvido com Next.js, React e Framer Motion. Ele oferece aos usuários a possibilidade de visualizar uma lista de filmes populares, pesquisar por filmes específicos, assistir a um destaque do dia e obter mais detalhes sobre cada filme selecionado. O projeto é uma demonstração de como criar um aplicativo de streaming de filmes usando tecnologias modernas de desenvolvimento web.
+ <!-- Além disso, a aplicação possui suporte para tema claro e escuro, proporcionando uma experiência personalizada ao usuário. -->
 
-## Instruções de Instalação
+## Demonstração
 
-Para executar o projeto localmente em sua máquina, siga as instruções abaixo:
+Para uma demonstração ao vivo do Cubos Flix, acesse o seguinte link: [Cubos Flix - Demo](https://cubos.netlify.app/)
 
-1. Certifique-se de ter o Node.js instalado em sua máquina. Caso precise instalá-lo, você pode fazer o download do Node.js em [https://nodejs.org/](https://nodejs.org/) e seguir as instruções de instalação adequadas para o seu sistema operacional.
+## Recursos
 
-2. Clone o repositório do Cubo Flix para sua máquina local usando o seguinte comando Git:
+- Visualização de filmes e séries: O usuário pode navegar pelos títulos disponíveis e visualizar informações como título, descrição e gêneros.
+- Destaque do dia: O Cubos Flix destaca um filme ou série diferente a cada dia na página inicial, permitindo que os usuários descubram novos conteúdos diariamente.
+- Busca por títulos específicos: Os usuários podem pesquisar filmes e séries específicos usando a barra de busca, facilitando a localização de conteúdos desejados.
+
+## Implatação futuras
+- Modal com detalhes dos filmes: Ao clicar em um cartão de filme ou série na página inicial, um modal é aberto exibindo detalhes completos do título, incluindo sinopse, elenco e outras informações relevantes.
+- Tema claro/escuro: A aplicação oferece suporte a um tema claro e escuro para atender às preferências do usuário, proporcionando uma experiência de uso agradável.
+
+## Pré-requisitos
+
+Antes de começar, verifique se você tem os seguintes requisitos instalados em seu sistema:
+
+- Node.js (versão 12 ou superior)
+- npm ou yarn
+
+## Instalação
+
+1. Clone o repositório:
 
 ```bash
-git clone https://github.com/Eduardo377/cubo-flix.git
+git clone https://github.com/seu-usuario/cubos-flix.git
+cd cubos-flix
 ```
 
-3. Navegue até o diretório do projeto:
-
-```bash
-cd cubo-flix
-```
-
-4. Instale as dependências do projeto executando o seguinte comando:
+2. Instale as dependências do projeto:
 
 ```bash
 npm install
+# ou
+yarn install
 ```
 
-5. Após a conclusão da instalação das dependências, execute o servidor de desenvolvimento:
+## Executando a Aplicação
+
+Para executar a aplicação localmente, utilize o seguinte comando:
 
 ```bash
 npm run dev
+# ou
+yarn dev
 ```
 
-6. O servidor de desenvolvimento será iniciado e estará disponível em [http://localhost:3000](http://localhost:3000). Abra este link em seu navegador para visualizar o projeto Cubo Flix.
+Acesse a aplicação no seu navegador através do endereço: [http://localhost:3000](http://localhost:3000)
 
-## Funcionalidades Principais
-
-### Tema Claro/Escuro
-
-O Cubo Flix oferece suporte a dois temas: claro e escuro. O tema padrão é o claro, mas os usuários podem alternar para o tema escuro clicando no botão de alternância de temas no cabeçalho.
-
-### Pesquisa de Filmes
-
-Os usuários podem pesquisar por filmes específicos utilizando a barra de pesquisa na página inicial. Ao digitar o nome do filme desejado e pressionar a tecla "Enter", a lista de filmes será filtrada de acordo com o termo de pesquisa.
-
-### Lista de Filmes Populares
-
-A página inicial exibe uma lista de filmes populares. Os filmes são organizados em uma lista horizontal com setas de navegação para rolar entre as páginas de filmes.
-
-### Destaque do Dia
-
-A seção "Destaque do Dia" na página inicial exibe um filme em destaque selecionado aleatoriamente. Os usuários podem clicar no botão de reprodução para assistir ao trailer do filme no YouTube.
-
-### Detalhes do Filme
-
-Ao clicar em um filme da lista de filmes populares ou do destaque do dia, uma janela modal é aberta com mais detalhes sobre o filme selecionado. O modal mostra o título, classificação, gêneros, data de lançamento e uma sinopse do filme.
-
-## Estrutura do Projeto
-
-A estrutura de pastas e arquivos do projeto Cubo Flix é organizada da seguinte forma:
+## Estrutura de Pastas
 
 ```
-cubo-flix/
-  ├── .next/
-  ├── node_modules/
+cubos-flix/
   ├── public/
-  │    ├── assets/
-  │    │    ├── logo.svg
-  │    │    ├── light-mode.svg
-  │    │    ├── dark-mode.svg
-  │    │    ├── seta-esquerda-preta.svg
-  │    │    ├── seta-direita-preta.svg
-  │    │    ├── seta-esquerda-branca.svg
-  │    │    ├── seta-direita-branca.svg
-  │    │    ├── estrela.svg
-  │    │    ├── close.svg
-  │    │    ├── play.svg
-  ├── components/
-  │    ├── Modal.js
-  ├── pages/
-  │    ├── index.js
-  │    └── _app.js
-  ├── styles/
-  │    └── globals.css
+  │   ├── assets/
+  │   │   └── demo.png
+  │   └── index.html
+  ├── src/
+  │   ├── components/
+  │   │   ├── Card.jsx
+  │   │   ├── Modal.jsx
+  │   │   └── ...
+  │   ├── pages/
+  │   │   ├── Home.jsx
+  │   │   ├── MovieDetails.jsx
+  │   │   └── ...
+  │   ├── services/
+  │   │   └── api.js
+  │   ├── styles/
+  │   │   ├── global.css
+  │   │   └── ...
+  │   ├── App.jsx
+  │   ├── index.jsx
+  │   └── ...
+  ├── .gitignore
   ├── package.json
-  └── README.md
+  ├── README.md
+  └── ...
 ```
 
-## Tecnologias Utilizadas
+**Contatos:**
+- WhatsApp: [+55 21 9 8264-6297](https://api.whatsapp.com/send?5521982646297)
+- Discord: [edu_gomes#8875](https://discord.com/channels/#8875/)
+- E-mail: [eduardogomes377@gmail.com](maiton:eduardogomes377@gmail.com)
 
-- Next.js: Framework de React para renderização do lado do servidor (SSR) e construção de aplicativos web modernos.
-- React: Biblioteca JavaScript para construção de interfaces de usuário interativas e reativas.
-- Framer Motion: Biblioteca para animações e transições suaves em elementos React.
-- CSS: Estilos globais e estilização dos componentes usando CSS.
-
-## Contribuição
-
-Se você deseja contribuir com o projeto Cubo Flix, fique à vontade para enviar um pull request. Sua contribuição é bem-vinda!
-
-## Licença
-
-O projeto Cubo Flix é licenciado sob a licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para obter mais detalhes.
-
-## Contato
-
-Se você
-
-tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para enviar um e-mail para [eduardogomes377@gmail.com](mailto:eduardogomes377@gmail.com) ou visite o meu perfil no GitHub em [https://github.com/Eduardo377](https://github.com/Eduardo377).
-
----
+**Redes Sociais:**
+- Perfil no LinkedIn: [/in/eduardogomes377](https://www.linkedin.com/in/eduardogomes377)
+- Perfil no GitHub: [@Eduardo377](https://github.com/Eduardo377)
+- Perfil no GitLab: [@eduardo377](https://gitlab.com/@eduardo377)
+- Perfil no CodePen: [eduardo377](https://codepen.io/eduardo377)
+- Perfil no Stack Overflow: [/users/259231/eduardo377](https://pt.stackoverflow.com/users/259231/eduardo377)
+- Perfil no CodeWars: [/users/eduardo377](https://www.codewars.com/users/eduardo377)
