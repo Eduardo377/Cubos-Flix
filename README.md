@@ -103,7 +103,7 @@ cubos-flix/
   │       ├── stackoverflow.svg
   │       └── whatsapp.svg
   ├── src/
-      ├── components/
+  │   ├── components/
   │   │   ├── Footer.jsx
   │   │   ├── Header.jsx
   │   │   ├── HighlightMovie.jsx
