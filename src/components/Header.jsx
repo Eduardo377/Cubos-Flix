@@ -2,7 +2,6 @@ import Image from "next/image";
 import { toggleTheme } from "../components/ToggleTheme";
 
 const Header = ({ onToggleTheme }) => {
-  onToggleTheme = toggleTheme;
   return (
     <header className="header">
       <Image src="./assets/logo.svg" alt="Logo" width={32} height={32} />
